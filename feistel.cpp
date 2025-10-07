@@ -1,6 +1,8 @@
 #include <cstdint>
 #include <functional>
 
+// 64 bit version
+
 class FeistelNetwork {
 private:
     const size_t ROUNDS;
