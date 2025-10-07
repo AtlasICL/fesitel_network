@@ -17,8 +17,10 @@ int main() {
     const std::uint8_t key = 92;
 
     const std::uint16_t ciphertext = FeistelCodec.encrypt(plaintext, key);
-    std::cout << "Ciphertext: " << ciphertext << std::endl;
+    std::cout << "-- Encrypting " << plaintext << " with key " << (int)key << " -- \n";
+    std::cout << "Generated ciphertext: " << ciphertext << std::endl;
 
-    const std::uint16_t retrieved_plaintext = FeistelCodec.decrypt(14377, key);
+    const std::uint16_t retrieved_plaintext = FeistelCodec.decrypt(ciphertext, key);
+    std::cout << "-- Decrypting " << ciphertext << " with key " << (int)key << " -- \n";
     std::cout << "Retrieved plaintext: " << retrieved_plaintext << std::endl;
 }
