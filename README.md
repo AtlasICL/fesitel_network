@@ -1,6 +1,6 @@
 # A C++ implementation of a Feistel network.
 
-### Note:
+## Note:
 
 Currently, the key must be an 8-bit integer (`std::uint8_t`) and the plaintext must be a 16-bit integer (`std::uint16_t`).  
 I am working on modifying the implementation to allow for plaintext of arbitrary size.  
